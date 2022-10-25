@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETrackee</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="./fonts.css" rel="stylesheet">
+</head>
+<body>
 
+    <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;visibility:hidden;">
+        <symbol id="account" viewbox="0 0 18 19">
+            <path d="M9 0C8.01109 0 7.04439 0.293245 6.22215 0.842652C5.3999 1.39206 4.75904 2.17295 4.3806 3.08658C4.00216 4.00021 3.90315 5.00555 4.09607 5.97545C4.289 6.94536 4.7652 7.83627 5.46447 8.53553C6.16373 9.2348 7.05464 9.711 8.02455 9.90393C8.99445 10.0969 9.99979 9.99784 10.9134 9.6194C11.827 9.24096 12.6079 8.6001 13.1573 7.77785C13.7068 6.95561 14 5.98891 14 5C14 3.67392 13.4732 2.40215 12.5355 1.46447C11.5979 0.526784 10.3261 0 9 0ZM9 8C8.40666 8 7.82664 7.82405 7.33329 7.49441C6.83994 7.16476 6.45542 6.69623 6.22836 6.14805C6.0013 5.59987 5.94189 4.99667 6.05764 4.41473C6.1734 3.83279 6.45912 3.29824 6.87868 2.87868C7.29824 2.45912 7.83279 2.1734 8.41473 2.05764C8.99667 1.94189 9.59987 2.0013 10.1481 2.22836C10.6962 2.45542 11.1648 2.83994 11.4944 3.33329C11.8241 3.82664 12 4.40666 12 5C12 5.79565 11.6839 6.55871 11.1213 7.12132C10.5587 7.68393 9.79565 8 9 8ZM18 19V18C18 16.1435 17.2625 14.363 15.9497 13.0503C14.637 11.7375 12.8565 11 11 11H7C5.14348 11 3.36301 11.7375 2.05025 13.0503C0.737498 14.363 0 16.1435 0 18V19H2V18C2 16.6739 2.52678 15.4021 3.46447 14.4645C4.40215 13.5268 5.67392 13 7 13H11C12.3261 13 13.5979 13.5268 14.5355 14.4645C15.4732 15.4021 16 16.6739 16 18V19H18Z" fill="#FFFC31"/>
+        </symbol>
+
+        <symbol id="dividerShort" viewbox="0 0 2 28">
+            <path d="M1 1V27" stroke="#5C415D" stroke-linecap="round"/>
+        </symbol>
+    </svg>
+
+    <section class="menu-background">
+        <div class="menu-title">
+            <span class="menu_text">ETrackee</span>
+        </div>
+        <div class="menu-date">
+            <!-- переделать на выпадающие менюхи с настройкой числа, месяца и года -->
+            <span class="menu_text">20</span>
+            <span class="menu_text">|</span>
+            <span class="menu_text">Октября</span>
+            <span class="menu_text">|</span>
+            <span class="menu_text">2022</span>
+        </div>
+        <div class="menu-account">
+            <a class="menu-account_text">Вход / Регистрация</a>
+            <a class="menu-account_imgContainer">
+                <svg class="menu-account_img">
+                    <use href="#account"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="calcStat-background">
+        
+        <div class="calcMainContainer">
+              <span class="calcStatMainTitle">Калькулятор</span>
+            <div class="calcSecContainer">
+                <div class="calc-statusContainer">
+                    <span class="calc-titles_text">Операция</span>
+                    <!-- вставить делители -->
+                    <span class="calc-status">25</span>
+                    <span class="calc-status">28</span>
+                    <span class="calc-status">30</span>
+                    <span class="calc-status">40</span>
+                </div>
+
+                <div class="calc-inputContainer">
+                    <span class="calc-titles_text">Значение</span>
+                    <input class="calc-input">
+                    <input class="calc-input">
+                    <input class="calc-input">
+                    <input class="calc-input">
+                </div>
+
+                <div class="calc-resultsContainer">
+                    <span class="calc-titles_text">Результат</span>
+                    <span class="calc-result">50</span>
+                    <span class="calc-result">50</span>
+                    <span class="calc-result">50</span>
+                    <span class="calc-result">50</span>
+                </div>
+            </div>
+            
+            
+        </div>
+        <span class="calcStatMainTitle">Статистика</span>
+        <div class="statContainer">
+            
+        </div>
+    </section>
+
+    <section class="calendar-background">
+
+    </section>
+</body>
+</html>
