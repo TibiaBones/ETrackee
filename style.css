@@ -26,6 +26,14 @@ body {
 
 }
 
+/* input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    line-height: 25px;
+    box-sizing: border-box;
+} */
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -87,11 +95,12 @@ a {
 .calcStatMainTitle {
     font-size: 32px;
     color: var(--Black);
-    margin: 0 auto;
+    margin: 0 auto 35px;
 }
 
 .calcMainContainer {
     max-width: 605px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,59 +110,168 @@ a {
 
 .calcSecContainer {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 605px;
+    width: 100%;
+}
+
+.calc-titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    max-width: 605px;
+    width: 100%;
+}
+
+.calc-titlesText {
+    font-size: 20px;
+    color: var(--Black);
+}
+
+.calc-titlesText_margin {
+    margin-right: 35px;
+}
+
+.calc-inputFields {
+    display: flex;
     justify-content: space-between;
     max-width: 605px;
 }
 
-.calc-titles_text{
-    font-size: 20px;
-    color: var(--Black);
-    margin-bottom: 15px;
-}
-
-.calc-statusContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .calc-status {
-    font-weight: 700;
-    font-size: 24px;
     background-color: var(--Gray);
     border-radius: 10px 0px 0px 10px;
-    width: 55px;
+    max-width: 120px;
+    width: 100%;
     height: 45px;
-    text-align: center;
-    line-height: 45px;
-}
-
-.calc-inputContainer {
+    margin-bottom: 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.calc-resultsContainer {
+.calc-status_text {
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--Black);
+}
+
+.calc-dividerShort_img {
+    width: 2px;
+    height: 28px;
+    margin-left: 15px;
+}
+
+.calc-input_background {
+    width: 100%;
+    height: 45px;
+    background-color: var(--Gray);
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    position: relative;
+}
+
+.calc-input {
+    display: block;
+    height: 25px;
+    min-width: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: var(--Gray);
+    color: var(--Black);
+    position: relative;
+}
+
+.calc-textAarea_img {
+    width: 100%;
+    height: 2px;
+
 }
 
 .calc-result {
     height: 45px;
-    width: 170px;
+    max-width: 170px;
+    min-width: 130px;
+    width: 100%;
     background-color: var(--Elements);
+    color: var(--Accent);
     border-radius: 0px 10px 10px 0px;
     text-align: center;
     line-height: 45px;
     font-size: 20px;
-    color: var(--Accent);
+    margin-bottom: 10px;
 }
 
+.calcStat-dividerVertical_img {
+    width: 2px;
+    height: 445px;
+    margin-top: 36px;
+}
 
+.calc-total {
+    display: flex;
+    flex-direction: column;
+    max-width: 605px;
+}
 
+.calc-totalFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
 
+.calc-totalFlexContainer_marginTop{
+    margin-top: 25px; 
+}
+
+.calc-totalFlexElement {
+    font-size: 24px;
+    color: var(--Black);
+}
+
+.calc-totalFlexElement_sum{
+    font-weight: 700;
+    max-width: 170px;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+}
+
+.calc-buttonSave_flexDirection{
+    justify-content: flex-start;
+}
+
+.calc-buttonSave{
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    color: var(--Accent);
+    background-color: var(--Elements);
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.divider{
+    background-color: var(--Background);
+    max-width: 1440px;
+    padding: 25px 0 15px;
+}
+
+.dividerHorizontal{
+    max-width: 1333px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--Elements);
+    margin: 0 auto ;
+}
 
 
 

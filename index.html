@@ -18,6 +18,18 @@
         <symbol id="dividerShort" viewbox="0 0 2 28">
             <path d="M1 1V27" stroke="#5C415D" stroke-linecap="round"/>
         </symbol>
+
+        <symbol id="dividerVertical" viewbox="0 0 2 447">
+            <path d="M1 1V446" stroke="#5C415D" stroke-linecap="round"/>
+        </symbol>
+
+        <symbol id="textAarea" viewbox="0 0 217 2">
+            <path d="M1 1H216" stroke="#5C415D" stroke-linecap="round"/>
+        </symbol>
+
+        <symbol id="dividerHorizontal" viewbox="0 0 1333 2">
+            <path d="M1 1H1332" stroke="#5C415D" stroke-linecap="round"/>
+        </symbol>
     </svg>
 
     <section class="menu-background">
@@ -33,7 +45,9 @@
             <span class="menu_text">2022</span>
         </div>
         <div class="menu-account">
+            <!-- центрировать по вертикали "вход/регистрация" -->
             <a class="menu-account_text">Вход / Регистрация</a>
+            
             <a class="menu-account_imgContainer">
                 <svg class="menu-account_img">
                     <use href="#account"/>
@@ -45,41 +59,132 @@
     <section class="calcStat-background">
         
         <div class="calcMainContainer">
-              <span class="calcStatMainTitle">Калькулятор</span>
+            <span class="calcStatMainTitle">Калькулятор</span>
+
             <div class="calcSecContainer">
-                <div class="calc-statusContainer">
-                    <span class="calc-titles_text">Операция</span>
-                    <!-- вставить делители -->
-                    <span class="calc-status">25</span>
-                    <span class="calc-status">28</span>
-                    <span class="calc-status">30</span>
-                    <span class="calc-status">40</span>
+                <div class="calc-titles">
+                    <span class="calc-titlesText">Операция</span>
+                    <span class="calc-titlesText">Значение</span>
+                    <span class="calc-titlesText calc-titlesText_margin">Результат</span>
                 </div>
 
-                <div class="calc-inputContainer">
-                    <span class="calc-titles_text">Значение</span>
-                    <input class="calc-input">
-                    <input class="calc-input">
-                    <input class="calc-input">
-                    <input class="calc-input">
+                <form class="calc-inputFields">
+                    <div class="calc-status">
+                        <span class="calc-status_text">25</span>
+
+                        <svg class="calc-dividerShort_img">
+                            <use href="#dividerShort"/>
+                        </svg>
+                    </div>
+
+                    <div class="calc-input_background">
+                        <input class="calc-input" type="text">
+                        <svg class="calc-textAarea_img">
+                            <use href="#textAarea"/>
+                        </svg>
+                    </div>    
+                    
+                    <span class="calc-result">50</span>
+                </form>
+
+                <form class="calc-inputFields">
+                    <div class="calc-status">
+                        <span class="calc-status_text">28</span>
+
+                        <svg class="calc-dividerShort_img">
+                            <use href="#dividerShort"/>
+                        </svg>
+                    </div>
+
+                    <div class="calc-input_background">
+                        <input class="calc-input" type="text">
+                        <svg class="calc-textAarea_img">
+                            <use href="#textAarea"/>
+                        </svg>
+                    </div>    
+                    
+                    <span class="calc-result">50</span>
+                </form>
+
+                <form class="calc-inputFields">
+                    <div class="calc-status">
+                        <span class="calc-status_text">30</span>
+
+                        <svg class="calc-dividerShort_img">
+                            <use href="#dividerShort"/>
+                        </svg>
+                    </div>
+
+                    <div class="calc-input_background">
+                        <input class="calc-input" type="text">
+                        <svg class="calc-textAarea_img">
+                            <use href="#textAarea"/>
+                        </svg>
+                    </div>    
+                    
+                    <span class="calc-result">50</span>
+                </form>
+
+                <form class="calc-inputFields">
+                    <div class="calc-status">
+                        <span class="calc-status_text">40</span>
+
+                        <svg class="calc-dividerShort_img">
+                            <use href="#dividerShort"/>
+                        </svg>
+                    </div>
+
+                    <div class="calc-input_background">
+                        <input class="calc-input" type="text">
+                        <svg class="calc-textAarea_img">
+                            <use href="#textAarea"/>
+                        </svg>
+                    </div>    
+
+                    <span class="calc-result">50</span>
+                </form>
+
+                <div class="calc-total">
+                    <div class="calc-totalFlexContainer calc-totalFlexContainer_marginTop"> 
+                        <span class="calc-totalFlexElement">Итого за 20 октября 2022</span>
+                        <span class="calc-totalFlexElement calc-totalFlexElement_sum">70 р.</span>
+                    </div>
+
+                    <div class="calc-totalFlexContainer">
+                        <span class="calc-totalFlexElement">Итого за месяц</span>
+                        <span class="calc-totalFlexElement calc-totalFlexElement_sum">1273 р.</span> 
+                    </div>
                 </div>
 
-                <div class="calc-resultsContainer">
-                    <span class="calc-titles_text">Результат</span>
-                    <span class="calc-result">50</span>
-                    <span class="calc-result">50</span>
-                    <span class="calc-result">50</span>
-                    <span class="calc-result">50</span>
+                <div class="calc-buttonSave_flexDirection">
+                    <input class="calc-buttonSave" type="button" value="Сохранить">
                 </div>
-            </div>
-            
-            
+                
+
+            </div>          
         </div>
+
+        <!-- заменить свг на блок -->
+        <svg class="calcStat-dividerVertical_img">
+            <use href="#dividerVertical"/>
+        </svg>
+        
+        
+        
+
+
         <span class="calcStatMainTitle">Статистика</span>
         <div class="statContainer">
             
         </div>
+
+        
     </section>
+
+    <div class="divider">
+        <div class="dividerHorizontal"></div>
+    </div>
+    
 
     <section class="calendar-background">
 
