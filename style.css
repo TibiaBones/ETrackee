@@ -209,10 +209,11 @@ a {
     margin-bottom: 10px;
 }
 
-.calcStat-dividerVertical_img {
+.calcStat-dividerVertContainer{
     width: 2px;
     height: 445px;
-    margin-top: 36px;
+    background-color: var(--Elements);
+    margin-top: 35px;
 }
 
 .calc-total {
@@ -259,7 +260,7 @@ a {
     border-radius: 10px;
 }
 
-.divider{
+.dividerHorContainer{
     background-color: var(--Background);
     max-width: 1440px;
     padding: 25px 0 15px;
