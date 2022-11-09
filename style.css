@@ -88,14 +88,15 @@ a {
     margin: auto;
     padding-top: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
 
 }
 
 .calcStatMainTitle {
     font-size: 32px;
     color: var(--Black);
-    margin: 0 auto 35px;
+    margin: 0 auto 0;
 }
 
 .calcMainContainer {
@@ -119,7 +120,7 @@ a {
 .calc-titles {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin: 35px 0 15px;
     max-width: 605px;
     width: 100%;
 }
@@ -229,7 +230,7 @@ a {
 }
 
 .calc-totalFlexContainer_marginTop{
-    margin-top: 25px; 
+    margin-top: 15px; 
 }
 
 .calc-totalFlexElement {
@@ -274,10 +275,41 @@ a {
     margin: 0 auto ;
 }
 
+.statContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 60px 0;
+}
 
+.stat-schedule{
+    height: 255px;
+    width: 100%;
+    margin-top: 25px;
+    line-height: 255px;
+    text-align: center;
+    background-color: #FFFC31;
+}
 
+.stat-flexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 24px;
+}
 
+.stat-FlexElement{
+    margin-bottom: 20px;
+}
 
+.stat-FlexElement_calcData{
+    font-weight: 700;
+}
 
 
 
