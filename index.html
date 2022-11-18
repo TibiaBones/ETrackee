@@ -43,12 +43,13 @@
         </div>
         <div class="menu-date">
             <!-- переделать на выпадающие менюхи с настройкой числа, месяца и года -->
-            <span class="menu_text">20</span>
+            <span class="menu_text"  onclick="pickDateNumber">20</span>
             <span class="menu_text">|</span>
-            <span class="menu_text">Октября</span>
+            <span class="menu_text"  onclick="pickDateMonth">Октября</span>
             <span class="menu_text">|</span>
-            <span class="menu_text">2022</span>
+            <span class="menu_text"  onclick="pickDateYear">2022</span>
         </div>
+        
         <div class="menu-account">
             <!-- центрировать по вертикали "вход/регистрация" -->
             <a class="menu-account_text">Вход / Регистрация</a>
@@ -60,6 +61,24 @@
             </a>
         </div>
     </section>
+
+    <div class="menu-pickDateNumber">
+        <p class="number">1</p>
+        <p class="number">2</p>
+        <p class="number">3</p>
+        <p class="number">4</p>
+        <p class="number">5</p>
+        <p class="number">6</p>
+        <p class="number">7</p>
+        <p class="number">8</p>
+        <p class="number">9</p>
+        <p class="number">10</p>
+        
+    </div>
+
+    <div class="menu-pickDateMonth"></div>
+
+    <div class="menu-pickDateYear"></div>
 
     <section class="calcStat-background">
         
@@ -215,7 +234,7 @@
                 </div> -->
                 <span class="calendar-switchButton">&#10094;</span>
 
-                <span class="calendar-mounth">Октябрь</span>
+                <span class="calendar-month">Октябрь</span>
 
                 <span class="calendar-switchButton">&#10095;</span>
                 <!-- <div class="calendar-switchButton_background">
