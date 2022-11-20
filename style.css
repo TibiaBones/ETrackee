@@ -61,25 +61,59 @@ a {
     font-size: 20px;
 }
 
-.menu-pickDateNumber{
+.menu-pickDate{
     
     display: flex;
     flex-direction: column;
-    width: 100px;
+    align-items: center;
+    width: 400px;
     position: fixed;
     top: 50px;
-    background-color: var(--Gray);
+    left: calc(50% - 200px);
+    background-color: var(--Elements);
     margin: 10px auto 0;
     z-index: 100;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--Black);
 }
 
-.number{
-    margin: 0 0;
-    padding: 5px 0;
+.menu-selectionBlock{
+    display: flex;
+    justify-content: center;
+    background-color: var(--Gray);
+    border-radius: 10px;
+}
+
+.menu-selectionBlock_marginTop{
+    margin-top: 10px;
+}
+
+.menu-selectionBlock_marginBottom{
+    margin-bottom: 10px;
+}
+
+.menu-selectionBlock_marginMiddle{
+    margin: 5px 0;
+}
+
+.menu-selectionButton{
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    color: var(--Black);
+}
+
+.menu-selectionInput{
+    width: 150px;
+    border: none;
+    background-color: var(--Gray);
     text-align: center;
 }
+
 
 .menu-account {
     margin-left: 15px;
