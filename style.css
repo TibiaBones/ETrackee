@@ -62,26 +62,46 @@ a {
     z-index: 100;
     left: calc(50% - 86px);
     cursor: pointer;
+    height: 100%;
+    line-height: 50px;
+    user-select: none;
+}
+
+.menu-date:hover{
+    color: var(--Accent);
 }
 
 .menu_text {
     font-size: 20px;
 }
 
+.menu-pickDate-background{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 150;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    cursor: pointer;
+}
+
 .menu-pickDate{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    width: 335px;
     position: fixed;
+    width: 335px;
     top: 50px;
     left: calc(50% - 167px);
     background-color: var(--Elements);
     margin: 10px auto 0;
-    z-index: 100;
+    z-index: 1000;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--Black);
 }
+
+
 
 .menu-selectionBlock{
     display: flex;
