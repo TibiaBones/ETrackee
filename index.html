@@ -20,29 +20,22 @@
             <path d="M1 1V27" stroke="#5C415D" stroke-linecap="round"/>
         </symbol>
 
-        <symbol id="dividerVertical" viewbox="0 0 2 447">
-            <path d="M1 1V446" stroke="#5C415D" stroke-linecap="round"/>
-        </symbol>
-
         <symbol id="textAarea" viewbox="0 0 217 2">
             <path d="M1 1H216" stroke="#5C415D" stroke-linecap="round"/>
         </symbol>
 
-        <symbol id="dividerHorizontal" viewbox="0 0 1333 2">
-            <path d="M1 1H1332" stroke="#5C415D" stroke-linecap="round"/>
-        </symbol>
-
-        <symbol id="chevron" viewbox="0 0 16 26">
-            <path d="M14 2L3.00001 13L14 24" stroke="#F0F0F0" stroke-width="3" stroke-linecap="round"/>
+        <symbol id="arrow" viewbox="0 0 39 39">
+            <path d="M0 19.5C9.41504e-07 8.73045 8.73045 -9.41504e-07 19.5 0C30.2696 9.41504e-07 39 8.73045 39 19.5C39 30.2696 30.2696 39 19.5 39C8.73045 39 -9.41504e-07 30.2696 0 19.5Z" fill="#5C415D"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0607 7.93934C24.6464 8.52513 24.6464 9.47488 24.0607 10.0607L14.1213 20L24.0607 29.9393C24.6464 30.5251 24.6464 31.4749 24.0607 32.0606C23.4749 32.6464 22.5251 32.6464 21.9393 32.0606L9.87869 20L21.9393 7.93934C22.5251 7.35356 23.4749 7.35356 24.0607 7.93934Z" fill="#F0F0F0"/>
         </symbol>
     </svg>
 
-    <section class="menu-background">
+    <!-- <section class="menu-background">
         <div class="menu-title">
-            <span class="menu_text">ETrackee</span>
+            <span class="menu_text">ETracker</span>
         </div>
+
         <div class="menu-date">
-            <!-- переделать на выпадающие менюхи с настройкой числа, месяца и года -->
             <span class="menu_text"  onclick="pickDateNumber">20</span>
             <span class="menu_text">|</span>
             <span class="menu_text"  onclick="pickDateMonth">Октября</span>
@@ -51,7 +44,6 @@
         </div>
         
         <div class="menu-account">
-            <!-- центрировать по вертикали "вход/регистрация" -->
             <a class="menu-account_text">Вход / Регистрация</a>
             
             <a class="menu-account_imgContainer">
@@ -60,25 +52,85 @@
                 </svg>
             </a>
         </div>
+    </section> -->
+
+    <section class="menu-background">
+            <div class="menu-title">
+                <span class="menu_text">ETracker</span>
+            </div>
+
+
+            <div class="menu-date">
+                <span class="menu_text"  onclick="pickDateNumber">20</span>
+                <span class="menu_text">|</span>
+                <span class="menu_text"  onclick="pickDateMonth">Октября</span>
+                <span class="menu_text">|</span>
+                <span class="menu_text"  onclick="pickDateYear">2022</span>
+            </div>
+
+
+            <div class="menu-account">
+            <!-- центрировать по вертикали "вход/регистрация" -->
+                <a class="menu-account_text">Вход / Регистрация</a>
+            
+                <a class="menu-account_imgContainer">
+                    <svg class="menu-account_img">
+                        <use href="#account"/>
+                    </svg>
+                </a>
+            </div>      
     </section>
 
     <div class="menu-pickDate">
         <div class="menu-selectionBlock menu-selectionBlock_marginTop">
-            <span class="menu-selectionButton">&#10094;</span>
-            <input class="menu-selectionInput" placeholder="20">
-            <span class="menu-selectionButton">&#10095;</span>
+            <svg class="menu-selectionButton">
+                <use href="#arrow"/>
+            </svg>
+
+            <div class="menu-selectionInputBackground">
+                <input class="menu-selectionInput" value="20">
+                <svg class="menu-selectionInput_textArea">
+                    <use href="#textAarea"/>
+                </svg>
+            </div>
+            
+            <svg class="menu-selectionButton arrowButton_right">
+                <use href="#arrow"/>
+            </svg>            
         </div>    
 
         <div class="menu-selectionBlock menu-selectionBlock_marginMiddle">
-            <span class="menu-selectionButton">&#10094;</span>
-            <input class="menu-selectionInput" placeholder="Октябрь">
-            <span class="menu-selectionButton">&#10095;</span>
+            <svg class="menu-selectionButton">
+                <use href="#arrow"/>
+            </svg>
+
+            <div class="menu-selectionInputBackground">
+                <input class="menu-selectionInput" value="Октябрь">
+                <svg class="menu-selectionInput_textArea">
+                    <use href="#textAarea"/>
+                </svg>
+            </div>
+            
+            <svg class="menu-selectionButton arrowButton_right">
+                <use href="#arrow"/>
+            </svg>
         </div>     
         
         <div class="menu-selectionBlock menu-selectionBlock_marginBottom">
-            <span class="menu-selectionButton">&#10094;</span>
-            <input class="menu-selectionInput" placeholder="2022">
-            <span class="menu-selectionButton">&#10095;</span>
+            <svg class="menu-selectionButton">
+                <use href="#arrow"/>
+            </svg>
+
+            <div class="menu-selectionInputBackground">
+                <input class="menu-selectionInput" value="2022">
+                <svg class="menu-selectionInput_textArea">
+                    <use href="#textAarea"/>
+                </svg>
+            </div>
+            
+            <svg class="menu-selectionButton arrowButton_right">
+                <use href="#arrow"/>
+            </svg>
         </div>     
     </div>
 
@@ -229,21 +281,15 @@
             </div>
 
             <div class="calendar-settingsPanel_flexContainer">
-                <!-- <div class="calendar-switchButton_background">
-                    <svg class="calendar-switchButton">
-                        <use href="#chevron"/>
-                    </svg>
-                </div> -->
-                <span class="calendar-switchButton">&#10094;</span>
+                <svg class="calendar-switchButton">
+                    <use href="#arrow"/>
+                </svg>
 
                 <span class="calendar-month">Октябрь</span>
 
-                <span class="calendar-switchButton">&#10095;</span>
-                <!-- <div class="calendar-switchButton_background">
-                    <svg class="calendar-switchButton calendar-switchButton_right">
-                        <use href="#chevron"/>
-                    </svg>
-                </div> -->
+                <svg class="calendar-switchButton arrowButton_right">
+                    <use href="#arrow"/>
+                </svg>
             </div>
         </div>
     </section>

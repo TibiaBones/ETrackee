@@ -47,14 +47,21 @@ a {
     width: 100%;
     height: 50px;
     background-color: var(--Elements);
+    color: var(--White);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--White);
 }
 
 .menu-title {
     margin: 0 15px;
+}
+
+.menu-date{
+    position: absolute;
+    z-index: 100;
+    left: calc(50% - 86px);
+    cursor: pointer;
 }
 
 .menu_text {
@@ -62,14 +69,13 @@ a {
 }
 
 .menu-pickDate{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 335px;
     position: fixed;
     top: 50px;
-    left: calc(50% - 200px);
+    left: calc(50% - 167px);
     background-color: var(--Elements);
     margin: 10px auto 0;
     z-index: 100;
@@ -79,51 +85,64 @@ a {
 
 .menu-selectionBlock{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--Gray);
     border-radius: 10px;
+    width: 305px;
+    height: 45px;
 }
 
 .menu-selectionBlock_marginTop{
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .menu-selectionBlock_marginBottom{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .menu-selectionBlock_marginMiddle{
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
 .menu-selectionButton{
-    display: block;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
-    text-align: center;
-    line-height: 40px;
-    font-size: 24px;
-    color: var(--Black);
+    margin: 10px;
+}
+
+.menu-selectionInputBackground{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-selectionInput{
     width: 150px;
-    border: none;
+    height: 25px;
     background-color: var(--Gray);
     text-align: center;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.menu-selectionInput_textArea{
+    width: 105px;
+    height: 2px;
+    background-color: var(--Elements);
 }
 
 
 .menu-account {
     margin-left: 15px;
-
 }
 
 .menu-account_text {
     font-size: 16px;
     text-align: center;
-
 }
 
 .menu-account_imgContainer {
@@ -144,7 +163,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
 }
 
 .calcStatMainTitle {
@@ -217,6 +235,7 @@ a {
     width: 2px;
     height: 28px;
     margin-left: 15px;
+    background-color: var(--Elements);
 }
 
 .calc-input_background {
@@ -247,7 +266,7 @@ a {
 .calc-textAarea_img {
     width: 100%;
     height: 2px;
-
+    background-color: var(--Elements);
 }
 
 .calc-result {
@@ -265,7 +284,7 @@ a {
 }
 
 .calcStat-dividerVertContainer{
-    width: 2px;
+    min-width: 2px;
     height: 445px;
     background-color: var(--Elements);
     margin-top: 35px;
@@ -427,17 +446,19 @@ a {
 
 .calendar-switchButton{
     border-radius: 40px;
-    background-color: var(--Elements);
-    color: var(--White);
+    /* background-color: var(--Elements);
+    color: var(--White); */
     height: 40px;
     width: 40px;  
-    text-align: center;
-    line-height: 40px;
-    font-size: 24px;
+    /* text-align: center; */
+    /* line-height: 40px; */
+    /* font-size: 24px; */
     cursor: pointer;
 }
 
-
+.arrowButton_right{
+    transform: scale(-1, 1);
+}
 
 /* .calendar-switchButton_background{
     
@@ -448,6 +469,3 @@ a {
     height: 26px;
 } */
 
-/* .calendar-switchButton_right{
-    transform: scale(-1, 1);
-} */
