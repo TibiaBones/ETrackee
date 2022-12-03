@@ -14,4 +14,6 @@
 //     document.getElementById('menuPickDate-background').style.display = 'none';
 // }
 
-new AirDatepicker('#datepicker');
+new AirDatepicker('#datepicker', {
+    position: 'bottom center'
+});
