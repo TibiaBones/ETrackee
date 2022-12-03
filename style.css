@@ -57,7 +57,7 @@ a {
     margin: 0 15px;
 }
 
-.menu-date{
+/* .menu-date{
     position: absolute;
     z-index: 100;
     left: calc(50% - 86px);
@@ -65,17 +65,33 @@ a {
     height: 100%;
     line-height: 50px;
     user-select: none;
-}
+} */
+.menu-date{
+    position: absolute;
+    z-index: 100;
+    left: calc(50% - 124px);
+    /* cursor: pointer; */
+    height: 100%;
+    line-height: 50px;
+    user-select: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--Elements);
+    color: var(--White);
+    }
 
 .menu-date:hover{
     color: var(--Accent);
 }
 
-.menu_text {
+/* .menu_text {
     font-size: 20px;
-}
+} */
 
-.menu-pickDate-background{
+/* .menu-pickDate-background{
     display: block;
     width: 100vw;
     height: 100vh;
@@ -153,7 +169,7 @@ a {
     width: 105px;
     height: 2px;
     background-color: var(--Elements);
-}
+} */
 
 
 .menu-account {

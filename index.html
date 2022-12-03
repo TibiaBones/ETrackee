@@ -7,6 +7,7 @@
     <title>ETrackee</title>
     <link href="./style.css" rel="stylesheet">
     <link href="./fonts.css" rel="stylesheet">
+    <link href="airdatepicker\air-datepicker.css" rel="stylesheet">
 </head>
 <body>
 
@@ -59,13 +60,14 @@
                 <span class="menu_text">ETracker</span>
             </div>
 
-            <div class="menu-date" onclick="openMenu()">
+            <!-- <div class="menu-date" onclick="openMenu()">
                 <span class="menu_text">20</span>
                 <span class="menu_text">|</span>
                 <span class="menu_text">Октября</span>
                 <span class="menu_text">|</span>
                 <span class="menu_text">2022</span>
-            </div>
+            </div> -->
+            <input class="menu-date" id="datepicker" type="text">
 
 
             <div class="menu-account">
@@ -79,7 +81,7 @@
                 </a>
             </div>      
     </section>
-        <div class="menu-pickDate-background" id="menuPickDate-background" onclick="closeMenu()"></div>
+        <!-- <div class="menu-pickDate-background" id="menuPickDate-background" onclick="closeMenu()"></div>
         <div class="menu-pickDate" id="menuPickDate">    
             <div class="menu-selectionBlock menu-selectionBlock_marginTop">
                 <svg class="menu-selectionButton">
@@ -132,7 +134,7 @@
                 </svg>
             </div>     
         
-        </div>
+        </div> -->
     
 
     <section class="calcStat-background">
@@ -295,5 +297,7 @@
         </div>
     </section>
 </body>
+<script src="airdatepicker\air-datepicker.js"></script>
 <script src="script.js"></script>
+
 </html>
