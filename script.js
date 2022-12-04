@@ -16,19 +16,19 @@ function calc25(){
 };
 
 function calc28(){
-    let statusValue28 = document.getElementById('calcInput-textAarea25').value; 
+    let statusValue28 = document.getElementById('calcInput-textAarea28').value; 
     let result = status28Price * statusValue28;
     document.getElementById('result28').innerHTML = result;
 };
 
 function calc30(){
-    let statusValue30 = document.getElementById('calcInput-textAarea25').value; 
+    let statusValue30 = document.getElementById('calcInput-textAarea30').value; 
     let result = status30Price * statusValue30;
     document.getElementById('result30').innerHTML = result;
 };
 
 function calc40(){
-    let statusValue40 = document.getElementById('calcInput-textAarea25').value; 
+    let statusValue40 = document.getElementById('calcInput-textAarea40').value; 
     let result = status40Price * statusValue40;
     document.getElementById('result40').innerHTML = result;
 };
