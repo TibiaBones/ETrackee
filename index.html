@@ -1,303 +1,222 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETrackee</title>
-    <link href="./style.css" rel="stylesheet">
-    <link href="./fonts.css" rel="stylesheet">
-    <link href="airdatepicker/air-datepicker.css" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ETrackee</title>
+        <link href="./style.css" rel="stylesheet">
+        <link href="./fonts.css" rel="stylesheet">
+        <link href="airdatepicker/air-datepicker.css" rel="stylesheet">
+    </head>
+    <body>
 
-    <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;visibility:hidden;">
-        <!-- удалить неиспользуемые -->
-        <symbol id="account" viewbox="0 0 18 19">
-            <path d="M9 0C8.01109 0 7.04439 0.293245 6.22215 0.842652C5.3999 1.39206 4.75904 2.17295 4.3806 3.08658C4.00216 4.00021 3.90315 5.00555 4.09607 5.97545C4.289 6.94536 4.7652 7.83627 5.46447 8.53553C6.16373 9.2348 7.05464 9.711 8.02455 9.90393C8.99445 10.0969 9.99979 9.99784 10.9134 9.6194C11.827 9.24096 12.6079 8.6001 13.1573 7.77785C13.7068 6.95561 14 5.98891 14 5C14 3.67392 13.4732 2.40215 12.5355 1.46447C11.5979 0.526784 10.3261 0 9 0ZM9 8C8.40666 8 7.82664 7.82405 7.33329 7.49441C6.83994 7.16476 6.45542 6.69623 6.22836 6.14805C6.0013 5.59987 5.94189 4.99667 6.05764 4.41473C6.1734 3.83279 6.45912 3.29824 6.87868 2.87868C7.29824 2.45912 7.83279 2.1734 8.41473 2.05764C8.99667 1.94189 9.59987 2.0013 10.1481 2.22836C10.6962 2.45542 11.1648 2.83994 11.4944 3.33329C11.8241 3.82664 12 4.40666 12 5C12 5.79565 11.6839 6.55871 11.1213 7.12132C10.5587 7.68393 9.79565 8 9 8ZM18 19V18C18 16.1435 17.2625 14.363 15.9497 13.0503C14.637 11.7375 12.8565 11 11 11H7C5.14348 11 3.36301 11.7375 2.05025 13.0503C0.737498 14.363 0 16.1435 0 18V19H2V18C2 16.6739 2.52678 15.4021 3.46447 14.4645C4.40215 13.5268 5.67392 13 7 13H11C12.3261 13 13.5979 13.5268 14.5355 14.4645C15.4732 15.4021 16 16.6739 16 18V19H18Z" fill="#FFFC31"/>
-        </symbol>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="position:absolute;visibility:hidden;">
+            <!-- удалить неиспользуемые -->
+            <symbol id="account" viewbox="0 0 18 19">
+                <path
+                    d="M9 0C8.01109 0 7.04439 0.293245 6.22215 0.842652C5.3999 1.39206 4.75904 2.17295 4.3806 3.08658C4.00216 4.00021 3.90315 5.00555 4.09607 5.97545C4.289 6.94536 4.7652 7.83627 5.46447 8.53553C6.16373 9.2348 7.05464 9.711 8.02455 9.90393C8.99445 10.0969 9.99979 9.99784 10.9134 9.6194C11.827 9.24096 12.6079 8.6001 13.1573 7.77785C13.7068 6.95561 14 5.98891 14 5C14 3.67392 13.4732 2.40215 12.5355 1.46447C11.5979 0.526784 10.3261 0 9 0ZM9 8C8.40666 8 7.82664 7.82405 7.33329 7.49441C6.83994 7.16476 6.45542 6.69623 6.22836 6.14805C6.0013 5.59987 5.94189 4.99667 6.05764 4.41473C6.1734 3.83279 6.45912 3.29824 6.87868 2.87868C7.29824 2.45912 7.83279 2.1734 8.41473 2.05764C8.99667 1.94189 9.59987 2.0013 10.1481 2.22836C10.6962 2.45542 11.1648 2.83994 11.4944 3.33329C11.8241 3.82664 12 4.40666 12 5C12 5.79565 11.6839 6.55871 11.1213 7.12132C10.5587 7.68393 9.79565 8 9 8ZM18 19V18C18 16.1435 17.2625 14.363 15.9497 13.0503C14.637 11.7375 12.8565 11 11 11H7C5.14348 11 3.36301 11.7375 2.05025 13.0503C0.737498 14.363 0 16.1435 0 18V19H2V18C2 16.6739 2.52678 15.4021 3.46447 14.4645C4.40215 13.5268 5.67392 13 7 13H11C12.3261 13 13.5979 13.5268 14.5355 14.4645C15.4732 15.4021 16 16.6739 16 18V19H18Z"
+                    fill="#FFFC31"/>
+            </symbol>
 
-        <symbol id="dividerShort" viewbox="0 0 2 28">
-            <path d="M1 1V27" stroke="#5C415D" stroke-linecap="round"/>
-        </symbol>
+            <symbol id="dividerShort" viewbox="0 0 2 28">
+                <path d="M1 1V27" stroke="#5C415D" stroke-linecap="round"/>
+            </symbol>
 
-        <symbol id="textAarea" viewbox="0 0 217 2">
-            <path d="M1 1H216" stroke="#5C415D" stroke-linecap="round"/>
-        </symbol>
+            <symbol id="textAarea" viewbox="0 0 217 2">
+                <path d="M1 1H216" stroke="#5C415D" stroke-linecap="round"/>
+            </symbol>
 
-        <symbol id="arrow" viewbox="0 0 39 39">
-            <path d="M0 19.5C9.41504e-07 8.73045 8.73045 -9.41504e-07 19.5 0C30.2696 9.41504e-07 39 8.73045 39 19.5C39 30.2696 30.2696 39 19.5 39C8.73045 39 -9.41504e-07 30.2696 0 19.5Z" fill="#5C415D"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0607 7.93934C24.6464 8.52513 24.6464 9.47488 24.0607 10.0607L14.1213 20L24.0607 29.9393C24.6464 30.5251 24.6464 31.4749 24.0607 32.0606C23.4749 32.6464 22.5251 32.6464 21.9393 32.0606L9.87869 20L21.9393 7.93934C22.5251 7.35356 23.4749 7.35356 24.0607 7.93934Z" fill="#F0F0F0"/>
-        </symbol>
-    </svg>
+            <symbol id="arrow" viewbox="0 0 39 39">
+                <path
+                    d="M0 19.5C9.41504e-07 8.73045 8.73045 -9.41504e-07 19.5 0C30.2696 9.41504e-07 39 8.73045 39 19.5C39 30.2696 30.2696 39 19.5 39C8.73045 39 -9.41504e-07 30.2696 0 19.5Z"
+                    fill="#5C415D"/>
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.0607 7.93934C24.6464 8.52513 24.6464 9.47488 24.0607 10.0607L14.1213 20L24.0607 29.9393C24.6464 30.5251 24.6464 31.4749 24.0607 32.0606C23.4749 32.6464 22.5251 32.6464 21.9393 32.0606L9.87869 20L21.9393 7.93934C22.5251 7.35356 23.4749 7.35356 24.0607 7.93934Z"
+                    fill="#F0F0F0"/>
+            </symbol>
+        </svg>
 
-    <!-- <section class="menu-background">
-        <div class="menu-title">
-            <span class="menu_text">ETracker</span>
-        </div>
-
-        <div class="menu-date">
-            <span class="menu_text"  onclick="pickDateNumber">20</span>
-            <span class="menu_text">|</span>
-            <span class="menu_text"  onclick="pickDateMonth">Октября</span>
-            <span class="menu_text">|</span>
-            <span class="menu_text"  onclick="pickDateYear">2022</span>
-        </div>
-        
-        <div class="menu-account">
-            <a class="menu-account_text">Вход / Регистрация</a>
-            
-            <a class="menu-account_imgContainer">
-                <svg class="menu-account_img">
-                    <use href="#account"/>
-                </svg>
-            </a>
-        </div>
-    </section> -->
-
-    <section class="menu-background">
+        <section class="menu-background">
             <div class="menu-title">
                 <span class="menu_text">ETracker</span>
             </div>
 
-            <!-- <div class="menu-date" onclick="openMenu()">
-                <span class="menu_text">20</span>
-                <span class="menu_text">|</span>
-                <span class="menu_text">Октября</span>
-                <span class="menu_text">|</span>
-                <span class="menu_text">2022</span>
-            </div> -->
             <input class="menu-date" id="datepicker" type="text" value="03.12.2022">
 
-
             <div class="menu-account">
-            <!-- центрировать по вертикали "вход/регистрация" -->
+                <!-- центрировать по вертикали "вход/регистрация" -->
                 <a class="menu-account_text">Вход / Регистрация</a>
-            
+
                 <a class="menu-account_imgContainer">
                     <svg class="menu-account_img">
                         <use href="#account"/>
                     </svg>
                 </a>
-            </div>      
-    </section>
-        <!-- <div class="menu-pickDate-background" id="menuPickDate-background" onclick="closeMenu()"></div>
-        <div class="menu-pickDate" id="menuPickDate">    
-            <div class="menu-selectionBlock menu-selectionBlock_marginTop">
-                <svg class="menu-selectionButton">
-                    <use href="#arrow"/>
-                </svg>
+            </div>
+        </section>
 
-                <div class="menu-selectionInputBackground">
-                    <input class="menu-selectionInput" value="20">
-                    <svg class="menu-selectionInput_textArea">
-                        <use href="#textAarea"/>
+        <section class="calcStat-background">
+
+            <div class="calcMainContainer">
+                <span class="calcStatMainTitle">Калькулятор</span>
+
+                <div class="calcSecContainer">
+                    <div class="calc-titles">
+                        <span class="calc-titlesText">Операция</span>
+                        <span class="calc-titlesText">Значение</span>
+                        <span class="calc-titlesText calc-titlesText_margin">Результат</span>
+                    </div>
+
+                    <form class="calc-inputFields">
+                        <div class="calc-status">
+                            <span class="calc-status_text" id="status25">25</span>
+
+                            <svg class="calc-dividerShort_img">
+                                <use href="#dividerShort"/>
+                            </svg>
+                        </div>
+
+                        <div class="calc-input_background">
+                            <input class="calc-input" type="number" id="calcInput-textAarea25" oninput="calc25(); getResult()">
+                            <svg class="calc-textAarea_img">
+                                <use href="#textAarea"/>
+                            </svg>
+                        </div>
+
+                        <span class="calc-result" ><span id="result25">0</span> р.</span>
+                    </form>
+
+                    <form class="calc-inputFields">
+                        <div class="calc-status">
+                            <span class="calc-status_text" id="status28">28</span>
+
+                            <svg class="calc-dividerShort_img">
+                                <use href="#dividerShort"/>
+                            </svg>
+                        </div>
+
+                        <div class="calc-input_background">
+                            <input class="calc-input" type="number" id="calcInput-textAarea28" oninput="calc28(); getResult()">
+                            <svg class="calc-textAarea_img">
+                                <use href="#textAarea"/>
+                            </svg>
+                        </div>
+
+                        <span class="calc-result" ><span id="result28">0</span> р.</span>
+                    </form>
+
+                    <form class="calc-inputFields">
+                        <div class="calc-status">
+                            <span class="calc-status_text" id="status30" id="calcInput-textAarea30">30</span>
+
+                            <svg class="calc-dividerShort_img">
+                                <use href="#dividerShort"/>
+                            </svg>
+                        </div>
+
+                        <div class="calc-input_background">
+                            <input class="calc-input" type="number" oninput="calc30(); getResult()">
+                            <svg class="calc-textAarea_img">
+                                <use href="#textAarea"/>
+                            </svg>
+                        </div>
+
+                        <span class="calc-result" ><span id="result30">0</span> р.</span>
+                    </form>
+
+                    <form class="calc-inputFields">
+                        <div class="calc-status">
+                            <span class="calc-status_text" id="status40">40</span>
+
+                            <svg class="calc-dividerShort_img">
+                                <use href="#dividerShort"/>
+                            </svg>
+                        </div>
+
+                        <div class="calc-input_background">
+                            <input class="calc-input" type="number" id="calcInput-textAarea40" oninput="calc40(); getResult()">
+                            <svg class="calc-textAarea_img">
+                                <use href="#textAarea"/>
+                            </svg>
+                        </div>
+
+                        <span class="calc-result" ><span id="result40">0</span> р.</span>
+                    </form>
+
+                    <div class="calc-total">
+                        <div class="calc-totalFlexContainer calc-totalFlexContainer_marginTop">
+                            <span class="calc-totalFlexElement">Итого за 20 октября 2022</span>
+                            <span class="calc-totalFlexElement calc-totalFlexElement_sum" ><span id="calcResult">0</span> р.</span>
+                        </div>
+
+                        <div class="calc-totalFlexContainer">
+                            <span class="calc-totalFlexElement">Итого за месяц</span>
+                            <span class="calc-totalFlexElement calc-totalFlexElement_sum">1273 р.</span>
+                        </div>
+                    </div>
+
+                    <div class="calc-buttonSave_flexDirection">
+                        <!-- <input class="calc-buttonSave" type="button" value="Сохранить"> -->
+                        <input class="buttonSave-Setting" type="button" value="Сохранить">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="calcStat-dividerVertContainer">
+                <div class="dividerVertical"></div>
+            </div>
+
+            <div class="statContainer">
+                <span class="calcStatMainTitle">Статистика</span>
+
+                <div class="stat-schedule">
+                    тут будет график
+                </div>
+
+                <div class="stat-flexContainer">
+                    <span class="stat-FlexElement">Итого за месяц —
+                        <span class="stat-FlexElement_calcData">23520</span>
+                        пунктов</span>
+                    <span class="stat-FlexElement">На
+                        <span class="stat-FlexElement_calcData">21</span>% выше предыдущего</span>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="dividerHorContainer">
+            <div class="dividerHorizontal"></div>
+        </div>
+
+        <section class="calendar-background">
+            <span class="calendar-MainTitle">График</span>
+
+            <div class="calendar-settingsPanel">
+                <div class="calendar-settingButton_container">
+                    <input class="buttonSave-Setting" type="button" value="Настроить">
+                </div>
+
+                <div class="calendar-settingsPanel_flexContainer">
+                    <svg class="calendar-switchButton">
+                        <use href="#arrow"/>
+                    </svg>
+
+                    <span class="calendar-month">Октябрь</span>
+
+                    <svg class="calendar-switchButton arrowButton_right">
+                        <use href="#arrow"/>
                     </svg>
                 </div>
-                
-                <svg class="menu-selectionButton arrowButton_right">
-                    <use href="#arrow"/>
-                </svg>            
-            </div>    
-
-            <div class="menu-selectionBlock menu-selectionBlock_marginMiddle">
-                <svg class="menu-selectionButton">
-                    <use href="#arrow"/>
-                </svg>
-
-                <div class="menu-selectionInputBackground">
-                    <input class="menu-selectionInput" value="Октябрь">
-                    <svg class="menu-selectionInput_textArea">
-                        <use href="#textAarea"/>
-                    </svg>
-                </div>
-                
-                <svg class="menu-selectionButton arrowButton_right">
-                    <use href="#arrow"/>
-                </svg>
-            </div>     
-            
-            <div class="menu-selectionBlock menu-selectionBlock_marginBottom">
-                <svg class="menu-selectionButton">
-                    <use href="#arrow"/>
-                </svg>
-
-                <div class="menu-selectionInputBackground">
-                    <input class="menu-selectionInput" value="2022">
-                    <svg class="menu-selectionInput_textArea">
-                        <use href="#textAarea"/>
-                    </svg>
-                </div>
-                
-                <svg class="menu-selectionButton arrowButton_right">
-                    <use href="#arrow"/>
-                </svg>
-            </div>     
-        
-        </div> -->
-    
-
-    <section class="calcStat-background">
-        
-        <div class="calcMainContainer">
-            <span class="calcStatMainTitle">Калькулятор</span>
-
-            <div class="calcSecContainer">
-                <div class="calc-titles">
-                    <span class="calc-titlesText">Операция</span>
-                    <span class="calc-titlesText">Значение</span>
-                    <span class="calc-titlesText calc-titlesText_margin">Результат</span>
-                </div>
-
-                <form class="calc-inputFields">
-                    <div class="calc-status">
-                        <span class="calc-status_text">25</span>
-
-                        <svg class="calc-dividerShort_img">
-                            <use href="#dividerShort"/>
-                        </svg>
-                    </div>
-
-                    <div class="calc-input_background">
-                        <input class="calc-input" type="text">
-                        <svg class="calc-textAarea_img">
-                            <use href="#textAarea"/>
-                        </svg>
-                    </div>    
-                    
-                    <span class="calc-result">50</span>
-                </form>
-
-                <form class="calc-inputFields">
-                    <div class="calc-status">
-                        <span class="calc-status_text">28</span>
-
-                        <svg class="calc-dividerShort_img">
-                            <use href="#dividerShort"/>
-                        </svg>
-                    </div>
-
-                    <div class="calc-input_background">
-                        <input class="calc-input" type="text">
-                        <svg class="calc-textAarea_img">
-                            <use href="#textAarea"/>
-                        </svg>
-                    </div>    
-                    
-                    <span class="calc-result">50</span>
-                </form>
-
-                <form class="calc-inputFields">
-                    <div class="calc-status">
-                        <span class="calc-status_text">30</span>
-
-                        <svg class="calc-dividerShort_img">
-                            <use href="#dividerShort"/>
-                        </svg>
-                    </div>
-
-                    <div class="calc-input_background">
-                        <input class="calc-input" type="text">
-                        <svg class="calc-textAarea_img">
-                            <use href="#textAarea"/>
-                        </svg>
-                    </div>    
-                    
-                    <span class="calc-result">50</span>
-                </form>
-
-                <form class="calc-inputFields">
-                    <div class="calc-status">
-                        <span class="calc-status_text">40</span>
-
-                        <svg class="calc-dividerShort_img">
-                            <use href="#dividerShort"/>
-                        </svg>
-                    </div>
-
-                    <div class="calc-input_background">
-                        <input class="calc-input" type="text">
-                        <svg class="calc-textAarea_img">
-                            <use href="#textAarea"/>
-                        </svg>
-                    </div>    
-
-                    <span class="calc-result">50</span>
-                </form>
-
-                <div class="calc-total">
-                    <div class="calc-totalFlexContainer calc-totalFlexContainer_marginTop"> 
-                        <span class="calc-totalFlexElement">Итого за 20 октября 2022</span>
-                        <span class="calc-totalFlexElement calc-totalFlexElement_sum">70 р.</span>
-                    </div>
-
-                    <div class="calc-totalFlexContainer">
-                        <span class="calc-totalFlexElement">Итого за месяц</span>
-                        <span class="calc-totalFlexElement calc-totalFlexElement_sum">1273 р.</span> 
-                    </div>
-                </div>
-
-                <div class="calc-buttonSave_flexDirection">
-                    <!-- <input class="calc-buttonSave" type="button" value="Сохранить"> -->
-                    <input class="buttonSave-Setting" type="button" value="Сохранить">
-                </div>
-                
-
-            </div>          
-        </div>
-
-        <div class="calcStat-dividerVertContainer">
-            <div class="dividerVertical"></div>
-        </div>
-        
-        
-
-
-        
-        <div class="statContainer">
-            <span class="calcStatMainTitle">Статистика</span>
-
-            <div class="stat-schedule"> 
-                тут будет график
             </div>
-
-            <div class="stat-flexContainer"> 
-                <span class="stat-FlexElement">Итого за месяц — <span class="stat-FlexElement_calcData">23520</span> пунктов</span>
-                <span class="stat-FlexElement">На <span class="stat-FlexElement_calcData">21</span>% выше предыдущего</span>
-            </div>
-        </div>
-
-        
-    </section>
-
-    <div class="dividerHorContainer">
-        <div class="dividerHorizontal"></div>
-    </div>
-    
-
-    <section class="calendar-background">
-        <span class="calendar-MainTitle">График</span>
-
-        <div class="calendar-settingsPanel">
-            <div class="calendar-settingButton_container">
-                <input class="buttonSave-Setting" type="button" value="Настроить">
-            </div>
-
-            <div class="calendar-settingsPanel_flexContainer">
-                <svg class="calendar-switchButton">
-                    <use href="#arrow"/>
-                </svg>
-
-                <span class="calendar-month">Октябрь</span>
-
-                <svg class="calendar-switchButton arrowButton_right">
-                    <use href="#arrow"/>
-                </svg>
-            </div>
-        </div>
-    </section>
-</body>
-<script src="airdatepicker/air-datepicker.js"></script>
-<script src="script.js"></script>
+        </section>
+    </body>
+    <script src="airdatepicker/air-datepicker.js"></script>
+    <script src="script.js"></script>
 
 </html>

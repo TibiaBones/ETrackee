@@ -57,15 +57,6 @@ a {
     margin: 0 15px;
 }
 
-/* .menu-date{
-    position: absolute;
-    z-index: 100;
-    left: calc(50% - 86px);
-    cursor: pointer;
-    height: 100%;
-    line-height: 50px;
-    user-select: none;
-} */
 .menu-date{
     position: absolute;
     z-index: 100;
@@ -86,91 +77,6 @@ a {
 .menu-date:hover{
     color: var(--Accent);
 }
-
-/* .menu_text {
-    font-size: 20px;
-} */
-
-/* .menu-pickDate-background{
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    z-index: 150;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    cursor: pointer;
-}
-
-.menu-pickDate{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    width: 335px;
-    top: 50px;
-    left: calc(50% - 167px);
-    background-color: var(--Elements);
-    margin: 10px auto 0;
-    z-index: 1000;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--Black);
-}
-
-
-
-.menu-selectionBlock{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--Gray);
-    border-radius: 10px;
-    width: 305px;
-    height: 45px;
-}
-
-.menu-selectionBlock_marginTop{
-    margin-top: 15px;
-}
-
-.menu-selectionBlock_marginBottom{
-    margin-bottom: 15px;
-}
-
-.menu-selectionBlock_marginMiddle{
-    margin: 15px 0;
-}
-
-.menu-selectionButton{
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.menu-selectionInputBackground{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu-selectionInput{
-    width: 150px;
-    height: 25px;
-    background-color: var(--Gray);
-    text-align: center;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    line-height: 25px;
-}
-
-.menu-selectionInput_textArea{
-    width: 105px;
-    height: 2px;
-    background-color: var(--Elements);
-} */
-
 
 .menu-account {
     margin-left: 15px;
@@ -359,17 +265,6 @@ a {
     justify-content: flex-start;
 }
 
-/* .calc-buttonSave{
-    width: 140px;
-    height: 35px;
-    line-height: 35px;
-    color: var(--Accent);
-    background-color: var(--Elements);
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-} */
-
 .buttonSave-Setting{
     width: 140px;
     height: 35px;
@@ -463,10 +358,6 @@ a {
     left: 60px;
 }
 
-/* .calendar-settingButton{
-    left: 35px; 
-} */
-
 .calendar-settingsPanel_flexContainer{
     position: relative;
     display: flex;
@@ -482,13 +373,8 @@ a {
 
 .calendar-switchButton{
     border-radius: 40px;
-    /* background-color: var(--Elements);
-    color: var(--White); */
     height: 40px;
     width: 40px;  
-    /* text-align: center; */
-    /* line-height: 40px; */
-    /* font-size: 24px; */
     cursor: pointer;
 }
 
@@ -496,12 +382,17 @@ a {
     transform: scale(-1, 1);
 }
 
-/* .calendar-switchButton_background{
-    
-} */
 
-/* .calendar-switchButton{
-    width: 16px;
-    height: 26px;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
 
