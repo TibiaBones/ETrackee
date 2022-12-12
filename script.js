@@ -4,9 +4,9 @@ new AirDatepicker('#datepicker', {
 
 const status25Price = 0.0344;
 const status28Price = 0.043;
-const status30Price = 0;
-const status40Price = 0.07;
-const entityPrice = 0.05;
+const status30Price = 0.071;
+const status40Price = 0.069;
+const entityPrice = 0.052;
 // уточнить стоимость операций
 
 function calc25(){
@@ -51,6 +51,6 @@ function getResult(){
     let result40 = +document.getElementById('result40').textContent;
     let resultEntity = +document.getElementById('resultEntity').textContent;
     let sum = result25 + result28 + result30 + result40 + resultEntity;
-    document.getElementById('calcResult').innerHTML = sum;
+    document.getElementById('calcResult').innerHTML = +sum.toFixed(2);
     console.log(sum);
 };
